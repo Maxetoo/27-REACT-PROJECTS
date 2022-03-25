@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(252, 250, 250);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.icon {
+    padding: 2.5rem;
+    font-size: 2.7em;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(92, 195, 230);
+    transition: 1s ease;
+    animation-name: Menu;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+
+@keyframes Menu {
+    0% {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.show-modal {
+    margin-top: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.show-btn {
+    width: 160px;
+    background: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(88, 87, 87);
+    z-index: 0;
+}
+
+.show-btn:hover {
+    background: white;
+    border: solid black 1.2px;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.display {
+    background: white;
+    width: 500px;
+    height: 100%;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.close-display {
+    width: 0;
+    height: 0;
+    z-index: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    animation: close 0.5s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.title {
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgb(173, 173, 173);
+}
+
+.icon-cancle {
+    color: red;
+    cursor: pointer;
+}
+
+.items {
+    padding: 1rem;
+}
+
+.list-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-icon {
+    color: rgb(130, 220, 248);
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 100%;
+    padding-left: 0.5rem;
+}
+
+.list-items li {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: x-large;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.list-items li:hover {
+    transition: 0.3s ease;
+    background: rgb(223, 231, 233);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    margin-left: 2.8rem;
+    cursor: pointer;
+}
+
+.showDisplay-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    position: relative;
+    margin-top: -2rem;
+}
+
+.display-show {
+    width: 400px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(143, 142, 142);
+    border: solid black 1.1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-cancel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    font-size: xx-large;
+    color: red;
+    cursor: pointer;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    opacity: 0.8;
+    text-shadow: 1px 1px 6px rgb(184, 178, 178);
+}

@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section {
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    background: rgb(108, 202, 233);
+    width: 130px;
+    height: 5px;
+    top: 100%;
+    right: 20%;
+    margin-top: 0.3rem;
+}
+
+.options {
+    height: 30px;
+    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+}
+
+.options>span:hover {
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease;
+}
+
+.active {
+    transition: ease 1s;
+    color: rgb(8, 142, 187);
+    text-decoration: underline;
+}
+
+.notactive {
+    color: black;
+}
+
+article {
+    margin-top: 2rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.job {
+    font-size: 23px;
+    opacity: 0.8;
+}
+
+.name {
+    background: rgb(214, 237, 245);
+    font-weight: 500;
+    opacity: 0.7;
+    padding: 0.4rem;
+    margin-top: 0.2rem;
+}
+
+.date {
+    color: rgb(111, 121, 124);
+    margin-top: 0.2rem;
+}
+
+.details {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    margin-top: -1rem;
+}
+
+ul li {
+    margin-top: 1.3rem;
+}
+
+.btn {
+    margin: 0.3rem;
+    width: 110px;
+    height: 25px;
+    color: white;
+    background: rgb(124, 198, 224);
+    text-align: center;
+    box-shadow: 1px 1px 5px rgb(160, 158, 158);
+    user-select: none;
+    cursor: pointer;
+}

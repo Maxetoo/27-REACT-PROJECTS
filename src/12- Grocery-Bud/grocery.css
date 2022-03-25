@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.underline {
+    width: 120px;
+    height: 5px;
+    background: rgb(127, 127, 230);
+    margin-top: 0.3rem;
+}
+
+.structure {
+    margin-top: 3rem;
+    background: white;
+    width: 400px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(109, 108, 108);
+    padding-bottom: 1.5rem;
+}
+
+.display {
+    margin-top: 3rem;
+}
+
+input {
+    width: 210px;
+    height: 27px;
+    border-top-left-radius: 5px;
+    border: solid rgb(127, 127, 230) 1.1px;
+    padding-left: 0.7rem;
+}
+
+button {
+    height: 27.5px;
+    width: 100px;
+    background: rgb(127, 127, 230);
+    color: white;
+    border: solid rgb(127, 127, 230) 1.5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.items {
+    margin-top: 1rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    height: 30px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* background: rgb(199, 199, 241); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+    padding-bottom: 0.2rem;
+}
+
+.list:hover {
+    transition: 0.35s ease;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+.item-name {
+    width: 80%;
+    /* word-wrap: unset; */
+}
+
+.icons {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    cursor: pointer;
+    user-select: none;
+}
+
+.edit {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
+.btn-clear {
+    margin-top: 1.5rem;
+    font-size: large;
+    color: red;
+    user-select: none;
+    cursor: pointer;
+}
+
+.alert-msg {
+    margin-bottom: -1rem;
+    margin-top: 0.3rem;
+    color: white;
+    font-size: medium;
+    width: 300px;
+    text-align: center;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-danger {
+    width: 100%;
+    height: 100%;
+    background: red;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.alert-pass {
+    width: 100%;
+    height: 100%;
+    background: green;
+    opacity: 0.7;
+    border-radius: 5px;
+}

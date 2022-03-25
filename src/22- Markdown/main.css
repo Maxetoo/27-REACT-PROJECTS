@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --header-color: rgb(255, 255, 255);
+    --background-color: rgb(241, 241, 241);
+    --white-font: rgb(240, 240, 240);
+    --black-font: rgb(0, 0, 0);
+    --remove-btn: rgb(87, 162, 209);
+    --remove-all: rgb(221, 44, 44);
+    --price-tag: rgb(108, 129, 136);
+    --font-weight: 500;
+    --large-font: 1.8em;
+}
+
+body {
+    background: var(--background-color);
+    font-family: monospace;
+    color: var(--black-font);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    margin: 5rem;
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(173, 171, 171);
+    padding: 1rem;
+    line-height: 1.6rem;
+    font-size: 1.3em;
+}
+
+.markdown-display {
+    width: 400px;
+    min-height: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -2rem;
+    line-height: 1.6rem;
+    overflow: hidden;
+}
